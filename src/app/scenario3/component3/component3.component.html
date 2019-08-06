@@ -1,0 +1,11 @@
+<html>
+    <h2>Scenario3</h2>
+
+    <div>
+        <input type="text" #name>
+        <button (click)=onSubmit(name.value)>Submit</button>
+
+        <!-- property binding -->
+        <app-component4 [parentData]="name.value"></app-component4>
+    </div>
+</html>
